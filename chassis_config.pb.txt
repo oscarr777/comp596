@@ -13,9 +13,45 @@ nodes {
 }
 singleton_ports {
   id: 1
-  name: "eth0"
+  name: "veth0"
   slot: 1
   port: 1
+  channel: 1
+  speed_bps: 100000000000
+  config_params {
+    admin_state: ADMIN_STATE_ENABLED
+  }
+  node: 1
+}
+singleton_ports {
+  id: 2
+  name: "veth2"
+  slot: 1
+  port: 2
+  channel: 1
+  speed_bps: 100000000000
+  config_params {
+    admin_state: ADMIN_STATE_ENABLED
+  }
+  node: 1
+}
+singleton_ports {
+  id: 3
+  name: "veth4"
+  slot: 1
+  port: 3
+  channel: 1
+  speed_bps: 100000000000
+  config_params {
+    admin_state: ADMIN_STATE_ENABLED
+  }
+  node: 1
+}
+singleton_ports {
+  id: 4
+  name: "veth6"
+  slot: 1
+  port: 4
   channel: 1
   speed_bps: 100000000000
   config_params {
